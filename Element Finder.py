@@ -123,7 +123,7 @@ class ElementFinderCommand(sublime_plugin.WindowCommand):
 					self.print_line(json_line["message"])
 
 				else:
-					print "Status: " + json_line["status"]
+					print("Status: " + json_line["status"])
 
 		if self.thread.complete == True:
 			self.output_view.erase_status("element_finder")
